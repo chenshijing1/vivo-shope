@@ -1,0 +1,247 @@
+.login-container{
+    width: 1200px;
+    height: 780px;
+    position: relative;
+}
+.login-container>img{
+    height: 100%;
+    width: 100%;
+}
+.login-content{
+    position: absolute;
+    width: 420px;
+    height: 549.33px;
+    background-color: white;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px 30px 20px 30px;
+    box-shadow: 0 0 18px -15px #333;
+}
+.login{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.login-title{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+}
+.login-title>span{
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}
+form.edit{
+    display: flex;
+    flex-direction: column;
+}
+.bottonline{
+    background-color: blue;
+    width: 42px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 25%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+/* .login-title>span:hover+.bottonline{
+     left: 75%;
+} */
+.login-title>span.active{
+    color: black;
+}
+.edit{
+    width: 100%;
+    margin-top: 10px;
+}
+.phonenum{
+    position: relative;
+    width: 100%;
+    display: flex;
+    border: 1px solid #999;
+}
+/* 选项卡样式 */
+.addr{
+    width: 74px;
+    height: 48px;
+    text-align: center;
+    
+    background-color: white;
+    cursor: pointer;
+}
+.addr>span{
+    line-height: 48px;
+}
+/* 需要js获取地址电话号码 */
+.addoption{
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    overflow: scroll;
+    display: none;
+}
+.addoption>ul{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%;
+    height: 100%; */
+}
+.addoption>ul>li{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #999;
+    flex-shrink: 0;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.addoption>ul>li>span:nth-child(1){
+    margin-right: auto;
+}
+.num{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding-right: 20px;
+    font-size: 16px;   
+}
+.prompt{
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+.prompt-two{
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+.getyan{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #999;
+    justify-content: flex-end;
+    margin-top: 10px;
+    background-color: white;
+    padding: 0 10px;
+}
+.yan{
+    
+    width: 220px;
+    height: 48px;
+    font-size: 16px;
+    padding-left: 10px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+.yan-text{
+    position: relative;
+    color:#456fff;
+    cursor: pointer;
+    width: 95px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 48px;
+    text-align: center;
+}
+.yan-text::after{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 1px;
+    background-color: #333;
+}
+.check{
+    width: 100%;
+    display: flex;
+    margin-top: 33px;
+}
+.check>input{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.check>span.check-one{
+    margin-right: auto;
+}
+[type=button]{
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+[type=submit]{
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.login-button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #456fff;
+}
+.zhuce-button{
+    font-size: 17px;
+    font-weight: bold;
+    color: #456fff;
+}
+.login-foot{
+    margin-top: 56px;
+    width: 100%;
+    height: 61.667px;
+    display: flex;
+    flex-direction: column;
+}
+.small-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #999;
+}
+.small-text>div{
+    flex-grow: 1;
+}
+.line{
+    height: 1px;
+    background-color: #999;
+}
+.icon{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icon>div{
+    font-size: 20px;
+    cursor: pointer;
+}
+.icon>div:hover{
+    color: #456fff;
+}

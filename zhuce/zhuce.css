@@ -1,0 +1,116 @@
+.zhuce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 860px;
+    height: 670px;
+    margin: 80px auto 0;
+}
+.zhuce>img{
+    width: 160px;
+    height: 42px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.zhuce-title{
+    width: 100%;
+    height: 30px;
+    color: #000;
+    font-family: HYQiHei-FZS;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.country{
+    position: relative;
+    width: 100%;
+    display: flex;
+    border: 1px solid #999;
+    color: #999;
+    margin-bottom: 15px;
+}
+.username{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;   
+}
+.phonenum{
+    position: relative;
+    width: 100%;
+    display: flex;
+    border: 1px solid #999;
+    margin-bottom: 20px;
+}
+/* 选项卡样式 */
+.addr{
+    width:94px;
+    height: 46px;
+    text-align: center; 
+    background-color: white;
+    cursor: pointer;
+}
+.addr>span{
+    line-height: 46px;
+}
+/* 需要js获取地址电话号码 */
+.addoption{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    overflow: auto;
+    display: none;
+}
+.addoption>ul{
+    display: flex;
+    flex-direction: column;
+}
+.addoption>ul>li{
+    /* width: 100%; */
+    height: 50px;
+    border: 1px solid #999;
+    flex-shrink: 0;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.addoption>ul>li>span:nth-child(1){
+    margin-right: auto;
+}
+.num{
+    width: 264px;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding-right: 20px;
+    font-size: 16px;   
+}
+/* 复选框样式 */
+.check{
+    width: 16px;
+    height: 16px;
+}
+/* 按钮样式 */
+.success{
+    width: 360px;
+    height: 48px;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #456fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}

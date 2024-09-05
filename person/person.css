@@ -1,0 +1,310 @@
+.person-container{
+    width: 1200px;
+    margin-bottom: 35px;
+}
+.person-title{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+.person-title>span{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.myorder-title{
+    color: #999;
+}
+.person-content{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    column-gap: 20px;
+}
+.person-left{
+    background-color: white;
+    flex-shrink: 0;
+    width: 200px;
+    min-height: 922px;
+}
+.person-left>div{
+    width: 100%;
+    height: 239px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.person-left>div>a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 142px;
+}
+.person-left>div>a>img{
+    width: 142px;
+    height: 142px;
+}
+.person-left>div>ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+/* .person-content>dl{
+   width: 100%;
+   text-align: center;
+} */
+.person-left>dl>dt{
+    margin-top: 28px;
+    padding-bottom: 8px;
+    padding-left: 64px;
+    font-weight: 700;
+    height: 32px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+}
+.person-left>dl>dd{
+    height: 33px;
+    width: 100%;
+    padding: 5px 0 2px 64px;
+    cursor: pointer;
+}
+.person-select.active{
+    background-color: #fdeaec;
+    color: #e90f23;
+}
+/* 右边样式 */
+.person-right{
+    flex-grow: 1;
+    background-color: white;
+}
+.person-right>.person-right-title{
+   width: 100%;
+   text-align: center;
+   font-size: 21px;
+   padding-top: 38px;
+}
+.person-right-content{
+    width: 100%;
+}
+.person-right-content>ul{
+    position: relative;
+    display: flex;
+    margin: 30px 0 32px;
+    padding-left: 25px;
+    height: 37px;
+}
+.person-right-content>ul>li{
+    
+    margin-right: 58px;
+}
+.person-right-content>ul>li>span{
+    cursor: pointer;
+    color: #999;
+}
+.li-title.active{
+    color: #f10313;
+}
+.person-right-content>ul>li:has(.li-title.active){
+    border-bottom: 3px solid red;
+}
+.li1-content-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.li1-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: red; */
+    top: 60px;
+    left: 0;
+    padding: 0 35px;
+}
+.li1-content-head{
+   width: 100%;
+   height: 42px;
+   background-color: #f7f7f7;
+   color: #666;
+   font-size: 14px;
+   display: flex;
+}
+.li1-content-head>div:nth-child(1){width: 395px; text-align: center;line-height: 42px;}
+.li1-content-head>div:nth-child(2){width: 66px; text-align: center;line-height: 42px;}
+.li1-content-head>div:nth-child(3){width: 108px; text-align: center;line-height: 42px;}
+.li1-content-head>div:nth-child(4){width: 100px; text-align: center;line-height: 42px;}
+.li1-content-head>div:nth-child(5){width: 108px; text-align: center;line-height: 42px;}
+.li1-content-head>div:nth-child(6){width: 143px; text-align: center;line-height: 42px;}
+.li1-content-content{
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333;
+    /* background-color: red; */
+}
+.li-head{
+    height: 46px;
+    width: 100%;
+    display: flex;
+    column-gap: 35px;
+    padding:0 25px;
+    align-items: center;
+    border: 1px solid #999;
+}
+.li-head>.b{
+    margin-right: auto;
+}
+.li-head>.remove-order{
+    cursor: pointer;
+}
+.li-head>.remove-order:hover{
+   color: red;
+}
+.li-middle{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    border: 1px solid #999;
+}
+.li-middle-image{
+    height: 100%;
+    width: 140px;
+    padding: 20px 10px 0;
+    border: 1px solid #999;
+    
+}
+.li-middle-image>img{
+    height: 120px;
+    width: 120px;
+}
+.li-middle-detail{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 432px;
+}
+.li-middle-goodsname{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #999;
+}
+.li-kong{
+    width: 85px;
+    height: 100%;
+}
+.li-cancel{
+    width: 106px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+}
+.looklist{
+    width: 143px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.li-foot{
+    border: 1px solid #999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 58px;
+    width: 100%;
+    padding-right: 10px;
+}
+body{
+    position: relative;
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.confirm{
+    position: fixed;
+    width: 492px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    margin-top: 200px;
+}
+.confirm>img{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.confirm-title{
+    font-size: 21px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.confirm-remove{
+    height: 21px;
+    font-size: 12px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.yes{
+    width: 134px;
+    height: 39px;
+    font-size: 18px;
+    border-radius: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 39px;
+    cursor: pointer;
+}
+.no{
+    width: 134px;
+    height: 39px;
+    font-size: 18px;
+    border-radius: 100px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 39px;
+    cursor: pointer;
+}
+.gohome{
+    cursor: pointer;
+
+}
+.gohome:hover{
+    color: red;
+}

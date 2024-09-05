@@ -1,0 +1,195 @@
+
+.head-box{
+    position: relative;
+    height: 34.48px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1000;
+}
+.head-box>ul.head{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width:1440px;
+    height: 100%;
+    align-items: center;
+    padding: 0 80px;
+}
+.head-box>.head>li{   
+}
+.head-box>.head>li>a{
+    padding-right: 42px;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+.head-box>.head>li>a:hover{
+    color: white;
+}
+.gw{
+    margin-right: auto;
+}
+.appma{
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    height: 190px;
+    top: 100%;
+    transform: translateX(-35%);
+    z-index: 999;
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.appma>img{
+    width: 120px;
+    height: 120px;
+}
+.app:hover+.appma{
+    display: flex;
+}
+.person{
+    position: absolute;
+    top: 100%;
+    transform: translateX(-35%);
+    width: 180px;
+    height: 100px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+}
+.person>a:nth-child(1){
+    display: block;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid black;
+    color: #333;
+    margin-top: 5px;
+}
+.person>a:nth-child(2){
+    display: block;
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid black;
+    color: #333;
+
+}
+.person>a:nth-child(1):hover{
+    box-shadow: 0px 0px 15px -5px #333;
+    color: blue;
+}
+.person>a:nth-child(2):hover{
+    box-shadow: 0px 15px 15px -5px #333;
+    color: blue;
+}
+.head-person{
+    height: 100%;
+    line-height: 34.48px;
+}
+.head-person:hover>.person{
+    display: flex;
+}
+
+.areas{
+    width: 1200px;
+    height: 240px;
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.areas img{
+    width: 394px;
+    height: 190px;
+    cursor: pointer;
+}
+.areas img:hover{
+    box-shadow: 10px 10px 20px -15px #666;
+}
+.content-box{
+   position: absolute;
+   background-color: #F7F7F7;
+   top: 940px;
+   width: 100%;
+}
+/* 脚步样式 */
+.foot{
+    width: 100%;
+    background-color: white;
+    margin-top: 30px;
+}
+.foot-head{
+    padding-top: 30px;
+    width: 1200px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4,1fr);
+    border-bottom: 1px solid black;
+}
+.foot-head>li{
+    height: 90px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.foot-head>li::before{
+    content: '';
+    display: inline-block;
+    height: 100% ;
+    vertical-align: middle;
+}
+.foot-content{
+    width: 100%;
+    padding: 60px 80px;
+}
+.content-item{
+    width: 1200px;
+    display: flex;
+    border-bottom: 1px solid #666;
+}
+.one-box{
+    display: flex;
+    flex-direction: row;
+}
+.one{
+    width: 149px;
+    display: flex;
+    flex-direction: column;
+}
+.one>span{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.one>a{
+    font-size: 16px;
+    color: #575C66;
+    margin-bottom: 10px;
+}
+.one:nth-child(5){
+    margin-right: auto;
+}
+.footright{
+    width: 30%;
+}
+
+
+
+

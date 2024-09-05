@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vivo购物车</title>
+    <link rel="stylesheet" href="../shoppingcar/shoppingcar.css">
+    <link rel="stylesheet" href="../index/index.css">
+    <link rel="stylesheet" href="../index/indexcss/public.css">
+    <link rel="stylesheet" href="../index/indexcss/nav.css">
+    <link rel="stylesheet" href="../shoppingcar/shoppingcarcss/goodscar.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4641721_0696ilijib3d.css">
+</head>
+<body>
+    <div class="head-box">
+        <ul class="head">
+            <li><a href="">品牌</a></li>
+            <li><a href="">OriginOS</a></li>
+            <li><a href="">体验店</a></li>
+            <li class="gw"><a href="">官网社区</a></li>
+            <li>
+                <a class="app" href="">下载APP</a>
+                <div class="appma">
+                    <img src="../images/app.png" alt="">
+                     <span>扫码下载vivo官网APP</span>
+                </div>
+            </li>
+            <li><a href="../shoppingcar/shoppingcar.html">购物车</a></li>
+            <li class="head-person">
+                <a href="">个人中心</a>
+                <div class="person">
+                    <a href="../login/login.html">登录</a>
+                    <a href="../zhuce/zhuce.html">注册</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 下拉菜单 -->
+    <div class="nav-container">
+        <div class="nav-banner" style="background-color: #F7F7F7">
+            <div class="nav-item-box w">
+                <div class="logo">
+                    <div class="iconfont icon-vivo"></div>
+                </div>
+                <div class="nav-item">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="search">
+                    <img src="../images/search.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="nav-botton">
+                <div class="nav-botton-left">全部x机型</div>
+                <div class="nav-botton-right">对比x机型</div>
+            </div> -->
+        </div>
+    </div> 
+    <!-- 下拉菜单结束 -->
+    <!-- 空购物 -->
+    <div class="car-container w kong" style="background-color: #F7F7F7;">
+        <div class="car-title">
+            <h4>我的购物车</h4>
+            <span class="continue">继续购物 &gt;</span>
+        </div>
+        <div class="car-content">
+            <div class="car-image">
+                <img src="../imageText/kongcar.png" alt="">
+                <div class="isnull"><span>哎呀，购物车位空！</span></div>
+                <div class="car-button">
+                    <button class="guang">去选购逛逛</button>
+                    <button class="collect">我的收藏</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 有商品时的购物车 -->
+    <div class="car-container w nokong" style="background-color: #F7F7F7; display: none;">
+        <div class="car-title">
+            <h4>我的购物车</h4>
+            <span class="continue">继续购物 &gt;</span>
+        </div>
+        <div class="table-title">
+            <span class="goodsnum">共0件商品</span>
+            <span class="goodsname">商品名称</span>
+            <span>价格(元)</span>
+            <span>数量</span>
+            <span>优惠</span>
+            <span>小计(元)</span>
+            <span>操作</span>
+        </div>
+        <div class="table">
+        </div>
+        <!-- 结算栏 -->
+            <div class="total">
+            <div class="total-left">
+                <div><input class="allSelect" type="checkbox" checked>全选</div>
+                <span class="clearAll">删除所选商品</span>
+                <span>移入收藏夹</span>
+            </div>
+            <div class="total-right">
+                合计: <span>￥0.00</span>
+                <input class="settlement" type="button" value="去结算" style="cursor: pointer;">
+            </div>
+            </div>
+     </div>
+     <div class="like-goods w">
+        <div class="like-title">
+            <span>猜你喜欢</span> 
+        </div>
+        <div class="like-content">
+            <ul>
+                
+            </ul>
+        </div>
+     </div>
+     <div class="foot">
+        <ul class="foot-head w">
+            <li>官方正品</li>
+            <li>极速物流</li>
+            <li>全国联保</li>
+            <li>免费制定</li>
+        </ul>
+        <div class="foot-content">
+            <div class="content-item w">
+                <div class="one-box">
+                    <div class="one">
+                        <span>了解产品</span>
+                        <a href="">x系列</a>
+                        <a href="">s系列</a>
+                        <a href="">T系列</a>
+                        <a href="">Y系列</a>
+                        <a href="">NEX系列</a>
+                        <a href="">iQOO手机</a>
+                        <a href="">智能硬件</a>
+                        <a href="">X Flip</a>
+                        <a href="">X Fold3 Pro</a>
+                        <a href="">S19 Pro</a>
+                        <a href="">X100 Ultra</a>
+                        <a href="">iQOO 12 Pro</a>
+                    </div>
+                    <div class="one">
+                        <span>在线购买</span>
+                        <a href="">官方商城</a>
+                        <a href="">选购手机</a>
+                        <a href="">选购配件</a>
+                        <a href="">订单查询</a>
+                        <a href="">官方APP下载</a>
+                    </div>
+                    <div class="one">
+                        <span>服务支持</span>
+                        <a href="">体验店</a>
+                        <a href="">服务首页</a>
+                        <a href="">真伪查询</a>
+                        <a href="">服务网点</a>
+                        <a href="">vivo care</a>
+                        <a href="">查找手机</a>
+                        <a href="">常见问题</a>
+                        <a href="">服务政策</a>
+                        <a href="">环保回收</a>
+                    </div>
+                    <div class="one">
+                        <span>商务合作</span>
+                        <a href="">供应商协同平台</a>
+                        <a href="">开放平台</a>
+                        <a href="">vivo企业业务</a>
+                    </div>
+                    <div class="one">
+                        <span>关于vivo</span>
+                        <a href="">vivo简介</a>
+                        <a href="">OriginOS</a>
+                        <a href="">工作机会</a>
+                        <a href="">新闻资讯</a>
+                        <a href="">廉正合规</a>
+                        <a href="">可持续发展</a>
+                        <a href="">vivo VISION+</a>
+                        <a href="">vivo蔡司影像</a>
+                        <a href="">安全公告</a>
+                        <a href="">vivo官网社区</a>
+                        <a href="">vivo办公套件</a>
+                        <a href="">开发者社区</a>
+                    </div>
+                </div>
+                
+                <img class="footright" src="../images/footright.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../axios/axios.js"></script>
+    <script src="../shoppingcar/shoppingcar.js"></script>
+</body>
+</html>
